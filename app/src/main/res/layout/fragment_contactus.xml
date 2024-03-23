@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="449dp"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="147dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/leftContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:textSize="16sp"
+                android:text="You can get in touch with us through the below platforms. Our team will reach you as soon as possible."
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leftContent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <!-- Phone Symbol and Contact Name -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/phoneicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+91 7090039507"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Email Symbol and Email Address -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="care@snehabinduchits.com"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/addressicon" />
+
+                <TextView
+                    android:layout_width="334dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reg_office_no_168_n_18th_cross_a_block_basweshawara_nagar_n_haveri_n_karnataka_n_pincode_581110_n_admin_office_aradyamath_enclave_building_n1st_flooor_jayadeva_nagar_j_h_patel_circle_haveri_581110"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/whatsapp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/whatsappTextView"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#25D366"
+                    android:background="@drawable/button_background"
+                    android:text="Click here to contact directly"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

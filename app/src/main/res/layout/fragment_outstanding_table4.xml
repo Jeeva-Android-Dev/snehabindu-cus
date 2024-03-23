@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="fill_vertical">
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/installment_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:minHeight="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_rf_auction"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Auction no"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp14_space" />
+                        <View
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/txt_rf_bonus"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Bonus"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp14_space" />
+
+                        <View
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_rf_pendind"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Pending"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp14_space" />
+
+                        <TextView
+                            android:id="@+id/txt_rf_penalty"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Penality"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp14_space" />
+
+
+                        <View
+                            android:layout_width="0sp"
+                            android:layout_height="match_parent" />
+
+
+                        <TextView
+                            android:id="@+id/txt_rf_totals"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Total pending"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/sp14_space" />
+
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/Recycler_instalments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:background="@color/colorPrimaryDark"
+                    android:gravity="center_vertical">
+
+                    <!-- Add your report details here. Example: -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Outstanding:"
+                        android:layout_marginStart="80dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                    android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/txt_total_outstanding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="RS 0.00"
+                        android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+
+        </FrameLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+

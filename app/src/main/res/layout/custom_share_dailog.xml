@@ -1,0 +1,28 @@
+<!-- res/layout/custom_share_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add your app logo or any other image view here -->
+
+    <!-- Add your share message or any other text views here -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imh"
+        android:scaleType="centerCrop"
+        android:src="@drawable/applogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let me recommend you this application"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
+
+</LinearLayout>

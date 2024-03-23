@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/aboutcertificate"
+        android:layout_width="379dp"
+        android:backgroundTint="#ffffff"
+        android:layout_height="287dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="2dp"
+        android:src="@drawable/aboutcerrtificate" />
+
+    <TextView
+        android:id="@+id/whyChooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="Why Choose Snehabindu Chits"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/abouttv"
+        android:layout_width="wrap_content"
+        android:layout_height="276dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/aboutdes"
+        android:textColor="@color/colorBlack" />
+
+
+    <TextView
+        android:id="@+id/infoTxtCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/blue_300"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="5dp"
+        android:textColorHint="@color/colorBlack"
+        android:textColorLink="@color/colorBlack"
+        android:textStyle="bold" />
+
+</LinearLayout>
