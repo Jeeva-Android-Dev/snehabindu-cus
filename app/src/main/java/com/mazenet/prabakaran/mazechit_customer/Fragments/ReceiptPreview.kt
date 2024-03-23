@@ -70,6 +70,7 @@ class ReceiptPreview : BaseFragment() {
             view.txt_rp_chequeno.text = arguments!!.getString("chequeno")
             view.txt_rp_chequebranch.text = arguments!!.getString("chequebranch")
             view.txt_rp_chequebdate.text = arguments!!.getString("chequedate")
+                //ch
         } else if (paytype.equals("D.D")) {
             view.chequelayout.visibility = View.GONE
             view.ddlayout.visibility = View.VISIBLE
